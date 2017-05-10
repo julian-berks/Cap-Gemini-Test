@@ -5,7 +5,7 @@ Pre-requisites
 ==============
 1) terraform (minimum version 0.9.4) 
 2) AWS command line interface installed and configured to log into an appropriate AWS account with sufficient privileges to build all necessary components. AWS AdministratorAccess is recommended. Details on how to do this differ between AWS implementations and are therefore out of scope of this document.
-3) The automation scripts assume you are running on a unix server.
+3) The automation scripts assume you are running on a unix machine.
 
 Description
 ===========
@@ -67,7 +67,7 @@ To tear down the stack
 Suggested Future Enhancements
 =============================
 
-rewrite the 2 shell scripts in python to allow for different operating systems.
+rewrite the 2 shell scripts in python to make them OS agnostic.
 
 The ELB should be switched to using https (no approved CA available at this time).
 
