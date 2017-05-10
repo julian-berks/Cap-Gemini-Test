@@ -10,7 +10,7 @@ Pre-requisites
 Description
 ===========
 This set of scripts creates a VPC with internet gateway, 2 Subnets (app and DMZ), a NAT gateway for use by the app servers,  security groups and an autoscaling group to create 2 applications servers (configurable).
-On start-up, each server pulls a binary copy of the application from a separate Git Hub code repository (julian-berks/Capgemini-Code/master/GoTest) and executes it.
+On start-up, each server pulls a binary copy of the application from a separate Git Hub code repository (julian-berks/Capgemini-Code/master/GoTest) and executes it. (Source code can also be found in this repo).
 An elastic load balancer manages traffic to the application and listens on port 80.
 
 A build.sh shell script is provided to, if necessary, create the backend S3 bucket needed to store the state files, automate the initialisation of terraform and run the build process.
