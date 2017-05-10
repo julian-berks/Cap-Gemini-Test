@@ -45,7 +45,7 @@ To Test
 =======
 Enter the application-url returned above into your browser.
 
-to Modify
+To Modify
 =========
 Most settings, including the region and availability zones are configurable via variables defined in the main.tf file.
 
@@ -81,7 +81,11 @@ Whilst unnecessarily complex for the current scenario, splitting out into additi
 
 Docker should be considered as an alternative to the current git hosted executable.
 
-Monitor the clodwatch and S3 logs using an ELK stack or Splunk. (Note: The app currently produces no output).
+Monitor the cloudwatch and S3 logs using an ELK stack or Splunk. (Note: The app currently produces no output).
+
+Create Cloudwatch alerts.
+
+Depending on monitoring requirements, the ELB logs could be pushed to Cloudwatch.
 
 
 
